@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+{% block main %}
+<style>
+    h1{
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    img{
+        height: 350px;
+        margin-top: -10px;
+        width: 1000px;
+    }
+</style>
+<div>
+    {% if messages %}
+        {% for message in messages %}
+            <p>{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+    <img src="static/SenhanceSurgery_system.jpg"/>
+</div>
+{% endblock %}
